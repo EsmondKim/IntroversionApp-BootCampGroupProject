@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="styles/reset.css" /> -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Introversion</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--Name of the app-->
+      <div class="row">
+        <div class="col s12">
+          <div id="Introversion-Banner">
+            <h1
+              class="card-panel white-text indigo darken-4"
+              id="Introversion-title"
+            >
+              Introversion
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!--Tip of the Day Section Goes Here-->
+
+      <div class="row">
+        <div class="advice-section">
+          <h2>Tip Of The Day</h2>
+          <button class="waves-effect indigo darken-4 btn" id="advice-btn">
+            Introvert Tips
+          </button>
+
+          <!--The Daily Tip Goes Here-->
+          <section id="daily-tip-array"></section>
+          <br />
+        </div>
+      </div>
+      <!--Joke Section Goes Here-->
+      <div class="row">
+        <div class="joke-section">
+          <h2>Jokes</h2>
+          <button class="waves-effect indigo darken-4 btn" id="joke-btn">
+            Get A Joke
+          </button>
+
+          <!--The Joke Result Goes Here-->
+          <section id="joke-set-up"></section>
+          <section id="joke-result"></section>
+          <br />
+        </div>
+      </div>
+
+      <!--News Section Goes Here-->
+      <div class="row">
+        <div class="news-section">
+          <h2>The Latest News</h2>
+          <div id="news-form">
+            <label class="black-text" for="news-input"></label>
+            <input
+              type="text"
+              id="news-input"
+              placeholder="What are you looking for?"
+              class="active"
+            />
+            <br />
+            <button class="waves-effect indigo darken-4 btn" id="news-btn">
+              Find Out Whats Going On
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--The News Result Goes Here-->
+      <section class="hideSection" id="daily-news-result">
+        <h3 id="news-titleHtml"></h3>
+        <p id="news-abstractHtml"></p>
+        <a class="hideButton" id="news-urlHtml"></a>
+        <p id="news-updatedDate"></p>
+      </section>
+      <br />
+      <div class="row">
+        <div id="human-interactions">
+          <div>
+            <h2>Human Interactions</h2>
+          </div>
+          <div>Press this button to tally interactions</div>
+          <button class="waves-effect indigo darken-4 btn" id="submitInt">
+            Push Me!
+          </button>
+          <div id="total-int">
+            Todays Total Interactions: <span id="dailyInt"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
